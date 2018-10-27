@@ -19,6 +19,7 @@ class HelloStreamLoader extends LagomApplicationLoader {
     new HelloStreamApplication(context) with LagomDevModeComponents
 
   override def describeService = Some(readDescriptor[HelloStreamService])
+
 }
 
 abstract class HelloStreamApplication(context: LagomApplicationContext)
